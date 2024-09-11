@@ -1,1 +1,32 @@
-<p>user-form works!</p>
+<div id="form" class="max-w-md mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 m-8">
+    <div class="mb-4">
+        <label for="user_name" class="block text-gray-700 text-sm font-bold mb-2">Nombre</label>
+        <input type="text" [(ngModel)]="user.name" id="user_name" name="user_name"
+               class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+    </div>
+    <div class="mb-4">
+        <label for="username" class="block text-gray-700 text-sm font-bold mb-2">Username</label>
+        <input type="text" [(ngModel)]="user.username" id="username" name="username"
+               class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+    </div>
+    <div class="mb-4">
+        <label for="user_phone" class="block text-gray-700 text-sm font-bold mb-2">Phone</label>
+        <input type="text" [(ngModel)]="user.phone" id="user_phone" name="user_phone"
+               class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+    </div>
+    <div class="mb-6">
+        <label for="user_website" class="block text-gray-700 text-sm font-bold mb-2">Website</label>
+        <input type="text" [(ngModel)]="user.website" id="user_website" name="user_website"
+               class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+    </div>
+    <div class="flex items-center justify-between">
+        <button (click)="mostrar()"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+            Mostrar
+        </button>
+        <button (click)="enviar()"
+                class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+            Enviar
+        </button>
+    </div>
+</div>
